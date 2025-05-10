@@ -38,7 +38,7 @@ The dataset contains the following:
 
 - Outliers were visible in some plots, but not removed for this version.
 
-## **Model Building**:
+## **Model Building**
 
 - Chose Random Forest Regressor for training as it handles non-linearity and works well for tabular data.
 
@@ -48,13 +48,15 @@ The dataset contains the following:
 
 - Cross-validation (cv=5) was also performed to get more robust performance.
 
-## **Model Results**
+## **Model Performance**
 
-- R² Score on Test Set: ~0.88 (can vary slightly run to run)
+We used the Random Forest Regressor to model and predict energy consumption. The model was evaluated using both training and testing data, and the results are as follows:
 
-- Root Mean Squared Error (RMSE): ~27.16
+- Training R² Score: 0.88
 
-The model predicts energy consumption quite well.
+- Testing R² Score: 0.65
+
+These results indicate that the model performs well on the training data, explaining 88% of the variance. However, the performance slightly drops on unseen data, suggesting minor overfitting. This means the model captures the core patterns in the dataset but may benefit from additional tuning or advanced feature engineering for improved generalization.
 
 ## **Feature Importance**
 
